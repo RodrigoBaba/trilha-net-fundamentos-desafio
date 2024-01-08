@@ -1,4 +1,5 @@
-﻿using DesafioFundamentos.Models;
+﻿using System.Runtime.ConstrainedExecution;
+using DesafioFundamentos.Models;
 
 // Coloca o encoding para UTF8 para exibir acentuação
 Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -45,7 +46,7 @@ while (exibirMenu)
 
         case "4":
             exibirMenu = false;
-            break;
+            continue;
 
         default:
             Console.WriteLine("Opção inválida");
